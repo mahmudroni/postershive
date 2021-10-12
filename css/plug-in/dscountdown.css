@@ -1,0 +1,66 @@
+.dsCountDown:after {
+	content: '';
+	clear: both;
+}
+
+.dsCountDown {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+
+/* ------------------------- White Theme ------------------------- */
+
+.dsCountDown.ds-white {
+	position: relative;
+}
+
+.ds-white .ds-element {
+	display: inherit;
+	margin-right: 50px;
+	text-align: center;
+}
+
+.ds-white .ds-element:not(:last-of-type):after {
+	content: '';
+	width: 1px;
+	height: 28px;
+	background-color: #5ca62b;
+	position: absolute;
+	top: 15%;
+}
+
+.ds-white .ds-element:first-child:after {
+	right: calc(100% - (100% / 4));
+}
+
+.ds-white .ds-element:nth-child(2):after {
+	right: calc(100% / 2.1);
+}
+
+.ds-white .ds-element:nth-child(3):after {
+	right: 20%;
+}
+
+.dsCountDown.ds-white>.ds-element.ds-element-seconds {
+	margin-right: 0;
+	padding-right: 0;
+	border-right: 0;
+}
+
+.ds-white .ds-element-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: lowercase;
+	color: #000;
+	opacity: 0.8;
+}
+
+.ds-white .ds-element-value {
+	font-family: 'Arvo', serif;
+	letter-spacing: 1px;
+	font-size: 2.25rem;
+	color: #5ca62b;
+}
